@@ -13,7 +13,7 @@ jobs:
         uses: dejitaru/SFTP-Deploy-Action@master
         with:
           username: 'manager'
-          server: 'korekuta.com'
+          server: 'korekuta.mx'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: './api/'
           remote_path: '/var/www/korekuta.mx/test-deploy/'
