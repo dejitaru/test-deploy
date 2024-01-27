@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: gestudios.com
-        username: gestudios_developer
+        username: gestudios
         password: ${{ secrets.GESTUDIOS_FTP_PASSWORD }}
         local-dir: ./
         server.dir: /sites/test-deploy
