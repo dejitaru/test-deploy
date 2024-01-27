@@ -13,6 +13,6 @@ jobs:
       with:
         server: gestudios.com
         username: gestudios_developer
-        password: ${{ secrets.gestudios_ftp_password }}
+        password: ${{ secrets.GESTUDIOS_FTP_PASSWORD }}
         local-dir: ./
         server.dir: /sites/test-deploy
