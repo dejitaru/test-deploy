@@ -1,18 +1,20 @@
 on: push
+
 name: 🚀 Deploy sftp website on push
+
 jobs:
-    deploy_job:
+  deploy_job:
     runs-on: ubuntu-latest
     name: deploy sftp
     steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-        - name: deploy file
-          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-            username: 'root'
-            server: 'korekuta.com'
-            ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-            local_path: './api/'
-            remote_path: '/var/www/korekuta.mx/test-deploy/'
-            sftpArgs: '-o ConnectTimeout=5'
+          username: 'root'
+          server: 'korekuta.com'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: './api/'
+          remote_path: '/var/www/korekuta.mx/test-deploy/'
+          sftpArgs: '-o ConnectTimeout=5'
