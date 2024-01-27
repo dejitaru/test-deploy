@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: dejitaru/SFTP-Deploy-Action
         with:
           username: 'root'
           server: 'korekuta.com'
