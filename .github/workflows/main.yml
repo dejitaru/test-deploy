@@ -1,9 +1,9 @@
-on: [push]
-name: 🚀 Deploy website on push
+on: push
+name: 🚀 Deploy sftp website on push
 jobs:
     deploy_job:
     runs-on: ubuntu-latest
-    name: deploy
+    name: deploy sftp
     steps:
         - name: Checkout
         uses: actions/checkout@v2

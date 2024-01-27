@@ -1,8 +1,8 @@
-on: push
-name: 🚀 Deploy website on push
+on: pash
+name: 🚀 Deploy ftp website on push
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deploy ftp
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
