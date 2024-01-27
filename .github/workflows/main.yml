@@ -12,7 +12,7 @@ jobs:
       - name: deploy file
         uses: dejitaru/SFTP-Deploy-Action@master
         with:
-          username: 'root'
+          username: 'manager'
           server: 'korekuta.com'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: './api/'
