@@ -6,9 +6,9 @@ jobs:
     name: deploy sftp
     steps:
         - name: Checkout
-        uses: actions/checkout@v2
+          uses: actions/checkout@v2
         - name: deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
             username: 'root'
             server: 'korekuta.com'
