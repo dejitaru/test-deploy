@@ -8,7 +8,7 @@ jobs:
     name: deploy sftp
     steps:
       - name: Checkout
-        uses: actions/checkout@latest
+        uses: actions/checkout@master
       - name: deploy file
         uses: dejitaru/SFTP-Deploy-Action@master
         with:
