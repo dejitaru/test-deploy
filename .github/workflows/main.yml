@@ -15,4 +15,4 @@ jobs:
         username: gestudios
         password: ${{ secrets.GESTUDIOS_FTP_PASSWORD }}
         local-dir: ./
-        server.dir: /sites/test-deploy
+        server-dir: /sites/test-deploy
