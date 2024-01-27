@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: deploy file
-        uses: dejitaru/SFTP-Deploy-Action
+        uses: dejitaru/SFTP-Deploy-Action@master
         with:
           username: 'root'
           server: 'korekuta.com'
