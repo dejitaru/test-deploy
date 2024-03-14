@@ -1,4 +1,7 @@
-on: pash
+on:
+  push:
+    branches:
+      - master-sftp
 name: 🚀 Deploy ftp website on push
 jobs:
   web-deploy:
