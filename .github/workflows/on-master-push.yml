@@ -18,6 +18,6 @@ jobs:
           username: 'manager'
           server: 'korekuta.mx'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: './'
+          local_path: './dist/'
           remote_path: '/var/www/korekuta.mx/test-deploy/'
           sftpArgs: '-o ConnectTimeout=5'
