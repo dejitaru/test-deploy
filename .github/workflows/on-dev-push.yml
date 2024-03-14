@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - dev
+
+name: 🚀 Deploy sftp website on dev push
+
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: deploy sftp
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: deploy file
+        uses: dejitaru/SFTP-Deploy-Action@master
+        with:
+          username: 'manager'
+          server: 'korekuta.mx'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: './'
+          remote_path: '/var/www/korekuta.mx/test-deploy-dev/'
+          sftpArgs: '-o ConnectTimeout=5'
